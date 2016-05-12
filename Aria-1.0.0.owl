@@ -44,6 +44,14 @@
 
 
 
+###  http://aria.abdoulsy.eu/ontology#Fighting_Game
+
+:Fighting_Game rdf:type owl:Class ;
+               
+               rdfs:subClassOf :Game .
+
+
+
 ###  http://aria.abdoulsy.eu/ontology#Game
 
 :Game rdf:type owl:Class .
@@ -112,9 +120,160 @@
 
 
 
+###  http://aria.abdoulsy.eu/ontology#Teacher
+
+:Teacher rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Person .
+
+
+
 ###  http://aria.abdoulsy.eu/ontology#Use
 
 :Use rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://aria.abdoulsy.eu/ontology#Abdoul
+
+:Abdoul rdf:type owl:NamedIndividual ,
+                 :Developer .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Aria
+
+:Aria rdf:type owl:NamedIndividual ,
+               :Codename .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Fulgore
+
+:Fulgore rdf:type owl:NamedIndividual ,
+                  :Codename .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#General_Assembly
+
+:General_Assembly rdf:type owl:NamedIndividual ,
+                           :Company .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Gerry
+
+:Gerry rdf:type owl:NamedIndividual ,
+                :Developer ,
+                :Teacher .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Glacius
+
+:Glacius rdf:type owl:NamedIndividual ,
+                  :Codename .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Guy
+
+:Guy rdf:type owl:NamedIndividual ,
+              :Codename .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Ibuki
+
+:Ibuki rdf:type owl:NamedIndividual ,
+                :Codename .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Killer_Instinct
+
+:Killer_Instinct rdf:type owl:NamedIndividual ,
+                          :Fighting_Game .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Lead_Instructor
+
+:Lead_Instructor rdf:type owl:NamedIndividual ,
+                          :Job .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Lead_Web_Developer
+
+:Lead_Web_Developer rdf:type owl:NamedIndividual ,
+                             :Job .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Moo
+
+:Moo rdf:type owl:NamedIndividual ,
+              :Company .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Ozzy
+
+:Ozzy rdf:type owl:NamedIndividual ,
+               :Developer .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Platform_Engineer
+
+:Platform_Engineer rdf:type owl:NamedIndividual ,
+                            :Job .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Rose
+
+:Rose rdf:type owl:NamedIndividual ,
+               :Codename .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Ryu
+
+:Ryu rdf:type owl:NamedIndividual ,
+              :Codename .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Smartlogic
+
+:Smartlogic rdf:type owl:NamedIndividual ,
+                     :Company .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Street_Fighter
+
+:Street_Fighter rdf:type owl:NamedIndividual ,
+                         :Fighting_Game .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Thunder
+
+:Thunder rdf:type owl:NamedIndividual ,
+                  :Codename .
 
 
 
