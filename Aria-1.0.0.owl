@@ -33,6 +33,12 @@ aria:Architecture rdf:type owl:Class .
 
 
 
+###  http://aria.abdoulsy.eu/ontology#Code_Style
+
+aria:Code_Style rdf:type owl:Class .
+
+
+
 ###  http://aria.abdoulsy.eu/ontology#Codename
 
 aria:Codename rdf:type owl:Class .
