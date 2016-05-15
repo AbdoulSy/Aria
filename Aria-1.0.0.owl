@@ -19,6 +19,20 @@
 #################################################################
 
 
+###  http://aria.abdoulsy.eu/ontology#API_JS_Architecture
+
+aria:API_JS_Architecture rdf:type owl:Class ;
+                         
+                         rdfs:subClassOf aria:JS_Architecture .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Architecture
+
+aria:Architecture rdf:type owl:Class .
+
+
+
 ###  http://aria.abdoulsy.eu/ontology#Codename
 
 aria:Codename rdf:type owl:Class .
@@ -62,6 +76,14 @@ aria:Game rdf:type owl:Class .
 ###  http://aria.abdoulsy.eu/ontology#Goal
 
 aria:Goal rdf:type owl:Class .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#JS_Architecture
+
+aria:JS_Architecture rdf:type owl:Class ;
+                     
+                     rdfs:subClassOf aria:Architecture .
 
 
 
@@ -109,6 +131,14 @@ aria:Room rdf:type owl:Class .
 
 
 
+###  http://aria.abdoulsy.eu/ontology#Ruby_Architecture
+
+aria:Ruby_Architecture rdf:type owl:Class ;
+                       
+                       rdfs:subClassOf aria:Architecture .
+
+
+
 ###  http://aria.abdoulsy.eu/ontology#Service
 
 aria:Service rdf:type owl:Class .
@@ -126,6 +156,12 @@ aria:Task rdf:type owl:Class .
 aria:Teacher rdf:type owl:Class ;
              
              rdfs:subClassOf aria:Person .
+
+
+
+###  http://aria.abdoulsy.eu/ontology#Unit
+
+aria:Unit rdf:type owl:Class .
 
 
 
