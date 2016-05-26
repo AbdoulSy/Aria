@@ -565,6 +565,10 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 :Airbnb_Code_Style_Github_Page_URL a owl:NamedIndividual , :URI ;
 	:hasURL "https://github.com/airbnb/javascript"^^xsd:anyURI .
 # 
+# http://aria.abdoulsy.eu/ontology#Angular_JS_Dependency
+
+:Angular_JS_Dependency a owl:NamedIndividual , :Dependency .
+# 
 # http://aria.abdoulsy.eu/ontology#Aria
 
 :Aria a owl:NamedIndividual , :Codename .
@@ -572,6 +576,10 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 # http://aria.abdoulsy.eu/ontology#Aria_OWL_File
 
 :Aria_OWL_File a owl:NamedIndividual , :File .
+# 
+# http://aria.abdoulsy.eu/ontology#Backbone_Dependency
+
+:Backbone_Dependency a owl:NamedIndividual , :Dependency .
 # 
 # http://aria.abdoulsy.eu/ontology#Bash
 
@@ -617,6 +625,10 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Core_Unit_js_file a owl:NamedIndividual , :URI ;
 	:hasURL "https://github.com/AbdoulSy/Core/blob/master/Architectures/js/unit/unit.js"^^xsd:anyURI .
+# 
+# http://aria.abdoulsy.eu/ontology#D3_Dependency
+
+:D3_Dependency a owl:NamedIndividual , :Dependency .
 # 
 # http://aria.abdoulsy.eu/ontology#Docker
 
@@ -710,6 +722,10 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Javascript_Code_Style a owl:NamedIndividual , :Code_Style .
 # 
+# http://aria.abdoulsy.eu/ontology#Karma_Dependency
+
+:Karma_Dependency a owl:NamedIndividual , :Dependency .
+# 
 # http://aria.abdoulsy.eu/ontology#Keychain_File
 
 :Keychain_File a owl:NamedIndividual , :File .
@@ -758,13 +774,25 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Polish a owl:NamedIndividual , :Language .
 # 
+# http://aria.abdoulsy.eu/ontology#Protractor_Dependency
+
+:Protractor_Dependency a owl:NamedIndividual , :Dependency .
+# 
 # http://aria.abdoulsy.eu/ontology#Pulaar
 
 :Pulaar a owl:NamedIndividual , :Language .
 # 
+# http://aria.abdoulsy.eu/ontology#React_Dependency
+
+:React_Dependency a owl:NamedIndividual , :Dependency .
+# 
 # http://aria.abdoulsy.eu/ontology#Rose
 
 :Rose a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Rspec_Dependency
+
+:Rspec_Dependency a owl:NamedIndividual , :Dependency .
 # 
 # http://aria.abdoulsy.eu/ontology#Ruby
 
@@ -801,6 +829,10 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 # http://aria.abdoulsy.eu/ontology#Trello
 
 :Trello a owl:NamedIndividual , :Tracker .
+# 
+# http://aria.abdoulsy.eu/ontology#Underscore_Dependency
+
+:Underscore_Dependency a owl:NamedIndividual , :Dependency .
 # 
 # http://aria.abdoulsy.eu/ontology#Unit_JS
 
