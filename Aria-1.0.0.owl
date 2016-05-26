@@ -553,7 +553,13 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :ES6_Code_Style a owl:NamedIndividual , :Code_Style ;
 	:hasGithubPage :Airbnb_CodeStyle_Github_Page ;
+	:hasSetupTutorial :ES6_Setup_Tutorial ;
 	:hasSetupTutorialUrl "http://codeutopia.net/blog/2014/12/18/getting-started-with-using-es6-ecmascript-6/"^^xsd:anyURI .
+# 
+# http://aria.abdoulsy.eu/ontology#ES6_Setup_Tutorial
+
+:ES6_Setup_Tutorial a owl:NamedIndividual , :Setup_Tutorial ;
+	:hasURI "http://codeutopia.net/blog/2014/12/18/getting-started-with-using-es6-ecmascript-6/"^^xsd:anyURI .
 # 
 # http://aria.abdoulsy.eu/ontology#Fulgore
 
