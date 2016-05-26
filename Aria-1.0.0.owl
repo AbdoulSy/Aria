@@ -259,6 +259,11 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Build a owl:Class .
 # 
+# http://aria.abdoulsy.eu/ontology#Build_Task
+
+:Build_Task a owl:Class ;
+	rdfs:subClassOf :Task .
+# 
 # http://aria.abdoulsy.eu/ontology#Code_Style
 
 :Code_Style a owl:Class .
@@ -274,6 +279,11 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 # http://aria.abdoulsy.eu/ontology#Company
 
 :Company a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Component_Test
+
+:Component_Test a owl:Class ;
+	rdfs:subClassOf :Test .
 # 
 # http://aria.abdoulsy.eu/ontology#Computer
 
@@ -308,6 +318,11 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 # http://aria.abdoulsy.eu/ontology#Documentation
 
 :Documentation a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#E2E_Test
+
+:E2E_Test a owl:Class ;
+	rdfs:subClassOf :Test .
 # 
 # http://aria.abdoulsy.eu/ontology#Error
 
@@ -404,6 +419,10 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Person a owl:Class .
 # 
+# http://aria.abdoulsy.eu/ontology#Pipeline
+
+:Pipeline a owl:Class .
+# 
 # http://aria.abdoulsy.eu/ontology#Problem
 
 :Problem a owl:Class .
@@ -452,6 +471,10 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 :Setup_Tutorial a owl:Class ;
 	rdfs:subClassOf :Tutorial .
 # 
+# http://aria.abdoulsy.eu/ontology#Software
+
+:Software a owl:Class .
+# 
 # http://aria.abdoulsy.eu/ontology#Task
 
 :Task a owl:Class .
@@ -469,6 +492,11 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Tracker a owl:Class .
 # 
+# http://aria.abdoulsy.eu/ontology#Tracker_Task
+
+:Tracker_Task a owl:Class ;
+	rdfs:subClassOf :Task .
+# 
 # http://aria.abdoulsy.eu/ontology#Tutorial
 
 :Tutorial a owl:Class .
@@ -480,6 +508,11 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 # http://aria.abdoulsy.eu/ontology#Unit
 
 :Unit a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Unit_Test
+
+:Unit_Test a owl:Class ;
+	rdfs:subClassOf :Test .
 # 
 # http://aria.abdoulsy.eu/ontology#Update
 
@@ -514,6 +547,14 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Abdoul a owl:NamedIndividual , :Developer .
 # 
+# http://aria.abdoulsy.eu/ontology#Abdouls_Fallback_Website
+
+:Abdouls_Fallback_Website a owl:NamedIndividual , :Webpage .
+# 
+# http://aria.abdoulsy.eu/ontology#Abook_Pro
+
+:Abook_Pro a owl:NamedIndividual , :Computer .
+# 
 # http://aria.abdoulsy.eu/ontology#Airbnb_CodeStyle_Github_Page
 
 :Airbnb_CodeStyle_Github_Page a owl:NamedIndividual , :Github_Page ;
@@ -527,6 +568,34 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 # http://aria.abdoulsy.eu/ontology#Aria
 
 :Aria a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Aria_OWL_File
+
+:Aria_OWL_File a owl:NamedIndividual , :File .
+# 
+# http://aria.abdoulsy.eu/ontology#Bash
+
+:Bash a owl:NamedIndividual , :Software .
+# 
+# http://aria.abdoulsy.eu/ontology#CA
+
+:CA a owl:NamedIndividual , :Tracker .
+# 
+# http://aria.abdoulsy.eu/ontology#CSS
+
+:CSS a owl:NamedIndividual , :Programmation_Language .
+# 
+# http://aria.abdoulsy.eu/ontology#Concourse_CI
+
+:Concourse_CI a owl:NamedIndividual , :Software .
+# 
+# http://aria.abdoulsy.eu/ontology#Concourse_Configuration_Object
+
+:Concourse_Configuration_Object a owl:NamedIndividual , :Configuration_Object .
+# 
+# http://aria.abdoulsy.eu/ontology#Core_Configuration_file
+
+:Core_Configuration_file a owl:NamedIndividual , :File .
 # 
 # http://aria.abdoulsy.eu/ontology#Core_Github_Page
 
@@ -549,6 +618,14 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 :Core_Unit_js_file a owl:NamedIndividual , :URI ;
 	:hasURL "https://github.com/AbdoulSy/Core/blob/master/Architectures/js/unit/unit.js"^^xsd:anyURI .
 # 
+# http://aria.abdoulsy.eu/ontology#Docker
+
+:Docker a owl:NamedIndividual , :Software .
+# 
+# http://aria.abdoulsy.eu/ontology#Docker_Configuration_Object
+
+:Docker_Configuration_Object a owl:NamedIndividual , :Configuration_Object .
+# 
 # http://aria.abdoulsy.eu/ontology#ES6_Code_Style
 
 :ES6_Code_Style a owl:NamedIndividual , :Code_Style ;
@@ -560,6 +637,18 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :ES6_Setup_Tutorial a owl:NamedIndividual , :Setup_Tutorial ;
 	:hasURI "http://codeutopia.net/blog/2014/12/18/getting-started-with-using-es6-ecmascript-6/"^^xsd:anyURI .
+# 
+# http://aria.abdoulsy.eu/ontology#Editor_Config_Files
+
+:Editor_Config_Files a owl:NamedIndividual , :File .
+# 
+# http://aria.abdoulsy.eu/ontology#English
+
+:English a owl:NamedIndividual , :Language .
+# 
+# http://aria.abdoulsy.eu/ontology#French
+
+:French a owl:NamedIndividual , :Language .
 # 
 # http://aria.abdoulsy.eu/ontology#Fulgore
 
@@ -573,21 +662,57 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Gerry a owl:NamedIndividual , :Developer , :Teacher .
 # 
+# http://aria.abdoulsy.eu/ontology#Git
+
+:Git a owl:NamedIndividual , :Software .
+# 
 # http://aria.abdoulsy.eu/ontology#Glacius
 
 :Glacius a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Glacius_Pipeline
+
+:Glacius_Pipeline a owl:NamedIndividual , :Pipeline .
+# 
+# http://aria.abdoulsy.eu/ontology#Glacius_Web_Page
+
+:Glacius_Web_Page a owl:NamedIndividual , :Webpage .
+# 
+# http://aria.abdoulsy.eu/ontology#Go
+
+:Go a owl:NamedIndividual , :Programmation_Language .
+# 
+# http://aria.abdoulsy.eu/ontology#Grunt_Configuration_Object
+
+:Grunt_Configuration_Object a owl:NamedIndividual , :Configuration_Object .
 # 
 # http://aria.abdoulsy.eu/ontology#Guy
 
 :Guy a owl:NamedIndividual , :Codename .
 # 
+# http://aria.abdoulsy.eu/ontology#HTML
+
+:HTML a owl:NamedIndividual , :Programmation_Language .
+# 
 # http://aria.abdoulsy.eu/ontology#Ibuki
 
 :Ibuki a owl:NamedIndividual , :Codename .
 # 
+# http://aria.abdoulsy.eu/ontology#Java
+
+:Java a owl:NamedIndividual , :Programmation_Language .
+# 
+# http://aria.abdoulsy.eu/ontology#Javascript
+
+:Javascript a owl:NamedIndividual , :Programmation_Language .
+# 
 # http://aria.abdoulsy.eu/ontology#Javascript_Code_Style
 
 :Javascript_Code_Style a owl:NamedIndividual , :Code_Style .
+# 
+# http://aria.abdoulsy.eu/ontology#Keychain_File
+
+:Keychain_File a owl:NamedIndividual , :File .
 # 
 # http://aria.abdoulsy.eu/ontology#Killer_Instinct
 
@@ -605,25 +730,65 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Moo a owl:NamedIndividual , :Company .
 # 
+# http://aria.abdoulsy.eu/ontology#NPM
+
+:NPM a owl:NamedIndividual , :Software .
+# 
+# http://aria.abdoulsy.eu/ontology#NPM_Configuration_object
+
+:NPM_Configuration_object a owl:NamedIndividual , :Configuration_Object .
+# 
+# http://aria.abdoulsy.eu/ontology#NodeJS
+
+:NodeJS a owl:NamedIndividual , :Software .
+# 
 # http://aria.abdoulsy.eu/ontology#Ozzy
 
 :Ozzy a owl:NamedIndividual , :Developer .
+# 
+# http://aria.abdoulsy.eu/ontology#PHP
+
+:PHP a owl:NamedIndividual , :Programmation_Language .
 # 
 # http://aria.abdoulsy.eu/ontology#Platform_Engineer
 
 :Platform_Engineer a owl:NamedIndividual , :Job .
 # 
+# http://aria.abdoulsy.eu/ontology#Polish
+
+:Polish a owl:NamedIndividual , :Language .
+# 
+# http://aria.abdoulsy.eu/ontology#Pulaar
+
+:Pulaar a owl:NamedIndividual , :Language .
+# 
 # http://aria.abdoulsy.eu/ontology#Rose
 
 :Rose a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Ruby
+
+:Ruby a owl:NamedIndividual , :Programmation_Language .
 # 
 # http://aria.abdoulsy.eu/ontology#Ryu
 
 :Ryu a owl:NamedIndividual , :Codename .
 # 
+# http://aria.abdoulsy.eu/ontology#SVG_LOGO
+
+:SVG_LOGO a owl:NamedIndividual , :File .
+# 
+# http://aria.abdoulsy.eu/ontology#Scala
+
+:Scala a owl:NamedIndividual , :Programmation_Language .
+# 
 # http://aria.abdoulsy.eu/ontology#Smartlogic
 
 :Smartlogic a owl:NamedIndividual , :Company .
+# 
+# http://aria.abdoulsy.eu/ontology#Software_Engineer
+
+:Software_Engineer a owl:NamedIndividual , :Job .
 # 
 # http://aria.abdoulsy.eu/ontology#Street_Fighter
 
@@ -632,6 +797,10 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 # http://aria.abdoulsy.eu/ontology#Thunder
 
 :Thunder a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Trello
+
+:Trello a owl:NamedIndividual , :Tracker .
 # 
 # http://aria.abdoulsy.eu/ontology#Unit_JS
 
@@ -644,5 +813,9 @@ rdfs:label rdfs:label "Core Interface"^^xsd:string .
 
 :Unit_js_Core_github_page a owl:NamedIndividual , :Github_Page ;
 	:hasURI :Core_Unit_js_file .
+# 
+# http://aria.abdoulsy.eu/ontology#Wolof
+
+:Wolof a owl:NamedIndividual , :Language .
 # 
 # Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi
