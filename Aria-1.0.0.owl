@@ -3,323 +3,607 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix aria: <http://aria.abdoulsy.eu/ontology#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://aria.abdoulsy.eu/ontology> .
 
-<http://aria.abdoulsy.eu/ontology> rdf:type owl:Ontology ;
-                                   
-                                   rdfs:comment "The Aria ontology that describes my entire development process, and my metadata in order to be used by the Aria Ai" .
-
-
-#################################################################
-#
-#    Classes
-#
-#################################################################
-
-
-###  http://aria.abdoulsy.eu/ontology#API_JS_Architecture
-
-aria:API_JS_Architecture rdf:type owl:Class ;
-                         
-                         rdfs:subClassOf aria:JS_Architecture .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Architecture
-
-aria:Architecture rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Code_Style
-
-aria:Code_Style rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Codename
-
-aria:Codename rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Company
-
-aria:Company rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Computer
-
-aria:Computer rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Developer
-
-aria:Developer rdf:type owl:Class ;
-               
-               rdfs:subClassOf aria:Person .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Fighting_Game
-
-aria:Fighting_Game rdf:type owl:Class ;
-                   
-                   rdfs:subClassOf aria:Game .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Game
-
-aria:Game rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Goal
-
-aria:Goal rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#JS_Architecture
-
-aria:JS_Architecture rdf:type owl:Class ;
-                     
-                     rdfs:subClassOf aria:Architecture .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Job
-
-aria:Job rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Milestone
-
-aria:Milestone rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Person
-
-aria:Person rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Problem
-
-aria:Problem rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Program
-
-aria:Program rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Recruiter
-
-aria:Recruiter rdf:type owl:Class ;
-               
-               rdfs:subClassOf aria:Person .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Room
-
-aria:Room rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Ruby_Architecture
-
-aria:Ruby_Architecture rdf:type owl:Class ;
-                       
-                       rdfs:subClassOf aria:Architecture .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Service
-
-aria:Service rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Task
-
-aria:Task rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Teacher
-
-aria:Teacher rdf:type owl:Class ;
-             
-             rdfs:subClassOf aria:Person .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Unit
-
-aria:Unit rdf:type owl:Class .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Use
-
-aria:Use rdf:type owl:Class .
-
-
-
-
-
-#################################################################
-#
-#    Individuals
-#
-#################################################################
-
-
-###  http://aria.abdoulsy.eu/ontology#Abdoul
-
-aria:Abdoul rdf:type owl:NamedIndividual ,
-                     aria:Developer .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Aria
-
-aria:Aria rdf:type owl:NamedIndividual ,
-                   aria:Codename .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Fulgore
-
-aria:Fulgore rdf:type owl:NamedIndividual ,
-                      aria:Codename .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#General_Assembly
-
-aria:General_Assembly rdf:type owl:NamedIndividual ,
-                               aria:Company .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Gerry
-
-aria:Gerry rdf:type owl:NamedIndividual ,
-                    aria:Developer ,
-                    aria:Teacher .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Glacius
-
-aria:Glacius rdf:type owl:NamedIndividual ,
-                      aria:Codename .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Guy
-
-aria:Guy rdf:type owl:NamedIndividual ,
-                  aria:Codename .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Ibuki
-
-aria:Ibuki rdf:type owl:NamedIndividual ,
-                    aria:Codename .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Killer_Instinct
-
-aria:Killer_Instinct rdf:type owl:NamedIndividual ,
-                              aria:Fighting_Game .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Lead_Instructor
-
-aria:Lead_Instructor rdf:type owl:NamedIndividual ,
-                              aria:Job .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Lead_Web_Developer
-
-aria:Lead_Web_Developer rdf:type owl:NamedIndividual ,
-                                 aria:Job .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Moo
-
-aria:Moo rdf:type owl:NamedIndividual ,
-                  aria:Company .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Ozzy
-
-aria:Ozzy rdf:type owl:NamedIndividual ,
-                   aria:Developer .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Platform_Engineer
-
-aria:Platform_Engineer rdf:type owl:NamedIndividual ,
-                                aria:Job .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Rose
-
-aria:Rose rdf:type owl:NamedIndividual ,
-                   aria:Codename .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Ryu
-
-aria:Ryu rdf:type owl:NamedIndividual ,
-                  aria:Codename .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Smartlogic
-
-aria:Smartlogic rdf:type owl:NamedIndividual ,
-                         aria:Company .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Street_Fighter
-
-aria:Street_Fighter rdf:type owl:NamedIndividual ,
-                             aria:Fighting_Game .
-
-
-
-###  http://aria.abdoulsy.eu/ontology#Thunder
-
-aria:Thunder rdf:type owl:NamedIndividual ,
-                      aria:Codename .
-
-
-
-
-###  Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi
-
+<http://aria.abdoulsy.eu/ontology> a owl:Ontology ;
+	rdfs:comment "The Aria ontology that describes my entire development process, and my metadata in order to be used by the Aria Ai" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://aria.abdoulsy.eu/ontology#hasAuthor
+
+:hasAuthor a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasBuild
+
+:hasBuild a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasBuildParent
+
+:hasBuildParent a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasBuildStep
+
+:hasBuildStep a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasBuildSteps
+
+:hasBuildSteps a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasCodeStyle
+
+:hasCodeStyle a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasCodeStyleReport
+
+:hasCodeStyleReport a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasCommitId
+
+:hasCommitId a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasDependencyList
+
+:hasDependencyList a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasDocumentation
+
+:hasDocumentation a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasDocumentationURI
+
+:hasDocumentationURI a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasErrorFormat
+
+:hasErrorFormat a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasExample
+
+:hasExample a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasGetBuildParentMethod
+
+:hasGetBuildParentMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasGetCodeStyleMethod
+
+:hasGetCodeStyleMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasGetDocumentationMethod
+
+:hasGetDocumentationMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasGetHelpUrlMethod
+
+:hasGetHelpUrlMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasGetMetadataMethod
+
+:hasGetMetadataMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasGetSetupTutorialMethod
+
+:hasGetSetupTutorialMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasGetTrackerUrlMethod
+
+:hasGetTrackerUrlMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasGetVisualisationMethod
+
+:hasGetVisualisationMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasGithubPage
+
+:hasGithubPage a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasHelp
+
+:hasHelp a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasInstallMethod
+
+:hasInstallMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasIssues
+
+:hasIssues a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasLintReport
+
+:hasLintReport a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasMetadata
+
+:hasMetadata a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasName
+
+:hasName a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasNextMethod
+
+:hasNextMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasNodes
+
+:hasNodes a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasOnBuildMethod
+
+:hasOnBuildMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasOnCompileMethod
+
+:hasOnCompileMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasOnDestroyMethod
+
+:hasOnDestroyMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasOnLoadMethod
+
+:hasOnLoadMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasParentMethod
+
+:hasParentMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasProgrammingLanguage
+
+:hasProgrammingLanguage a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasPublishMethod
+
+:hasPublishMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasPublisher
+
+:hasPublisher a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasPurpose
+
+:hasPurpose a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasRenderMethod
+
+:hasRenderMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasSetupTutorial
+
+:hasSetupTutorial a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasStatus
+
+:hasStatus a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasTestMethod
+
+:hasTestMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasTestReport
+
+:hasTestReport a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasTestSetupURI
+
+:hasTestSetupURI a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasTracker
+
+:hasTracker a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasURI
+
+:hasURI a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasURL
+
+:hasURL a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasUpdateMethod
+
+:hasUpdateMethod a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasVersion
+
+:hasVersion a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#hasVisualisation
+
+:hasVisualisation a owl:AnnotationProperty .
+# 
+# http://aria.abdoulsy.eu/ontology#isNode
+
+:isNode a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+
+rdfs:label rdfs:label "Core Interface"^^xsd:string .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://aria.abdoulsy.eu/ontology#API_JS_Architecture
+
+:API_JS_Architecture a owl:Class ;
+	rdfs:subClassOf :JS_Architecture .
+# 
+# http://aria.abdoulsy.eu/ontology#Architecture
+
+:Architecture a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Author
+
+:Author a owl:Class ;
+	rdfs:subClassOf :Developer .
+# 
+# http://aria.abdoulsy.eu/ontology#Build
+
+:Build a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Code_Style
+
+:Code_Style a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Codename
+
+:Codename a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Commit
+
+:Commit a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Company
+
+:Company a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Computer
+
+:Computer a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Configuration_Object
+
+:Configuration_Object a owl:Class ;
+	rdfs:subClassOf :Object .
+# 
+# http://aria.abdoulsy.eu/ontology#Core
+
+:Core a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Dependency
+
+:Dependency a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#DependencyList
+
+:DependencyList a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Destroy
+
+:Destroy a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Developer
+
+:Developer a owl:Class ;
+	rdfs:subClassOf :Person .
+# 
+# http://aria.abdoulsy.eu/ontology#Documentation
+
+:Documentation a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Error
+
+:Error a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#ExampleString
+
+:ExampleString a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Fighting_Game
+
+:Fighting_Game a owl:Class ;
+	rdfs:subClassOf :Game .
+# 
+# http://aria.abdoulsy.eu/ontology#FormatString
+
+:FormatString a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Game
+
+:Game a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Github_Page
+
+:Github_Page a owl:Class ;
+	rdfs:subClassOf :Webpage .
+# 
+# http://aria.abdoulsy.eu/ontology#Goal
+
+:Goal a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Help
+
+:Help a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#ID
+
+:ID a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Info
+
+:Info a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Install
+
+:Install a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Interface
+
+:Interface a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Interfaces
+
+:Interfaces a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Issue
+
+:Issue a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#JS_Architecture
+
+:JS_Architecture a owl:Class ;
+	rdfs:subClassOf :Architecture .
+# 
+# http://aria.abdoulsy.eu/ontology#Job
+
+:Job a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Language
+
+:Language a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#List
+
+:List a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Load
+
+:Load a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Milestone
+
+:Milestone a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Node
+
+:Node a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Object
+
+:Object a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Person
+
+:Person a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Problem
+
+:Problem a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Program
+
+:Program a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Programmation_Language
+
+:Programmation_Language a owl:Class ;
+	rdfs:subClassOf :Language .
+# 
+# http://aria.abdoulsy.eu/ontology#Recruiter
+
+:Recruiter a owl:Class ;
+	rdfs:subClassOf :Person .
+# 
+# http://aria.abdoulsy.eu/ontology#Render
+
+:Render a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Report
+
+:Report a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Room
+
+:Room a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Ruby_Architecture
+
+:Ruby_Architecture a owl:Class ;
+	rdfs:subClassOf :Architecture .
+# 
+# http://aria.abdoulsy.eu/ontology#Service
+
+:Service a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Setup
+
+:Setup a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Setup_Tutorial
+
+:Setup_Tutorial a owl:Class ;
+	rdfs:subClassOf :Tutorial .
+# 
+# http://aria.abdoulsy.eu/ontology#Task
+
+:Task a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Teacher
+
+:Teacher a owl:Class ;
+	rdfs:subClassOf :Person .
+# 
+# http://aria.abdoulsy.eu/ontology#Test
+
+:Test a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Tracker
+
+:Tracker a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Tutorial
+
+:Tutorial a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#URI
+
+:URI a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Unit
+
+:Unit a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Update
+
+:Update a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Use
+
+:Use a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Version
+
+:Version a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Visualisation
+
+:Visualisation a owl:Class .
+# 
+# http://aria.abdoulsy.eu/ontology#Webpage
+
+:Webpage a owl:Class .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://aria.abdoulsy.eu/ontology#Abdoul
+
+:Abdoul a owl:NamedIndividual , :Developer .
+# 
+# http://aria.abdoulsy.eu/ontology#Aria
+
+:Aria a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Core_Github_Page
+
+:Core_Github_Page a owl:NamedIndividual , :Github_Page ;
+	:hasURI :Core_Repository_Github_Page .
+# 
+# http://aria.abdoulsy.eu/ontology#Core_Interface
+
+:Core_Interface a owl:NamedIndividual , :Interface ;
+	:hasAuthor :Abdoul ;
+	:hasGithubPage :Core_Github_Page .
+# 
+# http://aria.abdoulsy.eu/ontology#Core_Repository_Github_Page
+
+:Core_Repository_Github_Page a owl:NamedIndividual , :URI ;
+	:hasURL "https://github.com/AbdoulSy/Core/blob/master/README.md"^^xsd:anyURI .
+# 
+# http://aria.abdoulsy.eu/ontology#ES6_Code_Style
+
+:ES6_Code_Style a owl:NamedIndividual , :Code_Style .
+# 
+# http://aria.abdoulsy.eu/ontology#Fulgore
+
+:Fulgore a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#General_Assembly
+
+:General_Assembly a owl:NamedIndividual , :Company .
+# 
+# http://aria.abdoulsy.eu/ontology#Gerry
+
+:Gerry a owl:NamedIndividual , :Developer , :Teacher .
+# 
+# http://aria.abdoulsy.eu/ontology#Glacius
+
+:Glacius a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Guy
+
+:Guy a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Ibuki
+
+:Ibuki a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Javascript_Code_Style
+
+:Javascript_Code_Style a owl:NamedIndividual , :Code_Style .
+# 
+# http://aria.abdoulsy.eu/ontology#Killer_Instinct
+
+:Killer_Instinct a owl:NamedIndividual , :Fighting_Game .
+# 
+# http://aria.abdoulsy.eu/ontology#Lead_Instructor
+
+:Lead_Instructor a owl:NamedIndividual , :Job .
+# 
+# http://aria.abdoulsy.eu/ontology#Lead_Web_Developer
+
+:Lead_Web_Developer a owl:NamedIndividual , :Job .
+# 
+# http://aria.abdoulsy.eu/ontology#Moo
+
+:Moo a owl:NamedIndividual , :Company .
+# 
+# http://aria.abdoulsy.eu/ontology#Ozzy
+
+:Ozzy a owl:NamedIndividual , :Developer .
+# 
+# http://aria.abdoulsy.eu/ontology#Platform_Engineer
+
+:Platform_Engineer a owl:NamedIndividual , :Job .
+# 
+# http://aria.abdoulsy.eu/ontology#Rose
+
+:Rose a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Ryu
+
+:Ryu a owl:NamedIndividual , :Codename .
+# 
+# http://aria.abdoulsy.eu/ontology#Smartlogic
+
+:Smartlogic a owl:NamedIndividual , :Company .
+# 
+# http://aria.abdoulsy.eu/ontology#Street_Fighter
+
+:Street_Fighter a owl:NamedIndividual , :Fighting_Game .
+# 
+# http://aria.abdoulsy.eu/ontology#Thunder
+
+:Thunder a owl:NamedIndividual , :Codename .
+# 
+# Generated by the OWL API (version 4.2.3.20160319-0906) https://github.com/owlcs/owlapi
